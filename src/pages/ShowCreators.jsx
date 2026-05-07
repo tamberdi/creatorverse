@@ -30,6 +30,9 @@ creators.map(creator => (
  <h2>{creator.name}</h2>
 <p>{creator.description}</p>
 <a href={creator.url} target="_blank">Visit Channel</a>
+<button onClick={() => navigate(`/view/${creator.id}`)}>
+    View
+</button>
 <button onClick={() => navigate(`/edit/${creator.id}`)}>
 Edit
 </button>
